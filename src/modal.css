@@ -1,0 +1,89 @@
+/* 共通の基本スタイル */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+    position: relative;
+  background-color: white;
+  padding: 20px;
+    border: 2px solid black;
+    text-align: left;
+  min-width: 300px;
+}
+
+.modal-close-button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-close-button:hover{
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+}
+
+.modal-bottom-buttons{
+    display: flex;
+    gap: 0;
+    margin-top: auto;
+
+}
+
+.modal-bottom-buttons button{
+    flex: 1;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0;
+}
+.modal-bottom-buttons button:hover{
+    flex: 1;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  width: 80px; /* ラベルの固定幅 */
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
