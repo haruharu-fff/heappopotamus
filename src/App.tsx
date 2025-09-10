@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import "../public/heapo.png"
 import "./App.css";
 import "./task.css";
 import "./modal.css";
@@ -216,7 +215,7 @@ function App() {
 
   return (
     <>
-        <img src="../public/heapo.png" alt="ヒーポくん" style={{ maxWidth: "20%", height: "auto" }} />
+        <img src="/heapo.png" alt="ヒーポくん" style={{ maxWidth: "20%", height: "auto" }} />
         <div 
         style={{ 
             textAlign: "right", 
